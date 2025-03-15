@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Categories</title>
+    <style>
+          body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        background: linear-gradient(135deg, #e0f2fe, #d1c4e9); /* Soft gradient background */
+        height: 100vh; /* Ensure full viewport height */
+        display: flex;
+        flex-direction: column;
+      }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 800;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                margin-top: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav li {
+                margin: 5px 0;
+            }
+        }
+
+        nav.ai-categories {
+            padding: 40px;
+            text-align: center;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        nav.ai-categories h3 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        nav.ai-categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav.ai-categories li {
+            font-size: 1.5em;
+            margin: 20px 15px;
+            border-radius: 0.5rem;
+            color: white;
+            padding: 0.8rem;
+            background-color: #007bff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        nav.ai-categories a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        nav.ai-categories a:hover {
+            color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            nav.ai-categories {
+                width: 95%;
+                padding: 30px;
+            }
+
+            nav.ai-categories li {
+                font-size: 1.2em;
+                margin: 15px 10px;
+            }
+        }
+  img[src="Ai img.webp"] {
+  position: absolute;
+  right: 100px;
+  top: 450px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Haito</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="category.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="ai-categories">
+      <img src="Ai img.webp" alt="ai image" />
+        <h3>AI Categories</h3>
+        <ul>
+            <li><a href="chatbot.html">AI Chatbots & Virtual Assistants</a></li>
+            <li><a href="coding ai.html">Code Generation</a></li>
+            <li><a href="content.html">Content Creation</a></li>
+            <li><a href="multi media.html">Multi media</a></li>
+            <li><a href="business.html">Business & Productivity</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="ecommerce.html">E-commerce</a></li>
+            <li><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="healthcare.html">Healthcare</a></li>
+            <li><a href="hr recruitment.html">HR & Recruitment</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

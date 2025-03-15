@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Catlag</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        background: linear-gradient(135deg, #e0f2fe, #d1c4e9); /* Soft gradient background */
+        height: 100vh; /* Ensure full viewport height */
+        display: flex;
+        flex-direction: column;
+      }
+
+      #intro {
+        text-align: center;
+        padding: 80px 20px;
+        flex-grow: 1; /* Allow intro to take up available space */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .intro-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      #intro h1 {
+        font-size: 3em;
+        margin-bottom: 25px;
+        color: #2c3e50; /* Darker, professional heading color */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+      }
+
+      #intro p {
+        font-size: 1.2em;
+        line-height: 1.7;
+        color: #555;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .scroll-btn {
+        display: inline-block;
+        padding: 15px 35px;
+        background: linear-gradient(135deg, #64b5f6, #2979ff); /* Gradient button */
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600; /* Semi-bold font */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .scroll-btn:hover {
+        transform: translateY(-3px); /* Slight lift on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        #intro {
+          padding: 60px 15px;
+        }
+
+        #intro h1 {
+          font-size: 2.5em;
+        }
+
+        #intro p {
+          font-size: 1.1em;
+        }
+
+        .scroll-btn {
+          padding: 12px 30px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        #intro h1 {
+          font-size: 4em;
+        }
+
+        #intro p {
+          font-size: 1em;
+        }
+      }
+      header {
+            background-color: #f8f8f8; /* Light gray background */
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50; /* Darker, professional color */
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 800;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007bff; /* Blue hover color */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                margin-top: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Haito</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="category.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
+  </header>
+
+      <section id="intro">
+    <div class="intro-container">
+        <h1>Welcome to  Haito this is the Ultimate AI Tools Hub </h1>
+        <p>Explore 80+ AI tools across various categories. Find the perfect AI solution for chat, automation, image generation, and more.</p>
+        <a href="category.html" class="scroll-btn">Discover AI Tools</a>
+    </div>
+</section>
+
+  </body>
+</html>
