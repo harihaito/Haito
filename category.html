@@ -72,16 +72,16 @@
         }
 
         nav.ai-categories {
-            padding: 40px;
+            padding: 5%; /* Use percentage for padding */
             text-align: center;
-            width: 90%; /* Increased width for better spacing */
-            max-width: 900px;
+            width: 90%;
+            max-width: 1000px; /* Increased max-width */
             margin: 0 auto;
         }
 
         nav.ai-categories h3 {
-            font-size: 3.5rem; /* Adjusted font size */
-            margin-bottom: 30px;
+            font-size: 3.5vw; /* Use viewport width for font size */
+            margin-bottom: 3%;
             color: #2c3e50;
         }
 
@@ -95,11 +95,11 @@
         }
 
         nav.ai-categories li {
-            font-size: 1.4em; /* Adjusted font size */
-            margin: 15px; /* Adjusted margin */
+            font-size: 1.5vw; /* Use viewport width for font size */
+            margin: 2%;
             border-radius: 0.5rem;
             color: white;
-            padding: 0.8rem 1.2rem; /* Adjusted padding */
+            padding: 1% 2%;
             background-color: #007bff;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
@@ -116,59 +116,49 @@
 
         img {
             position: absolute;
-            right: 50px; /* Adjusted right position */
-            top: 400px; /* Adjusted top position */
+            right: 5%; /* Use percentage for right position */
+            top: 40%; /* Use percentage for top position */
             transform: translateY(-50%);
             border-radius: 50%;
-            width: 300px; /* Adjusted width */
-            height: 300px; /* Adjusted height */
+            width: 25vw; /* Use viewport width for image size */
+            height: 25vw;
             object-fit: cover;
         }
 
-        @media (max-width: 1024px) { /* Tablet landscape and smaller laptops */
+        @media (max-width: 1024px) {
             img {
-                right: 20px;
-                top: 350px;
-                width: 250px;
-                height: 250px;
+                right: 2%;
+                top: 35%;
+                width: 30vw;
+                height: 30vw;
             }
         }
 
-        @media (max-width: 768px) { /* Tablets and smaller */
-            nav.ai-categories {
-                width: 95%;
-                padding: 20px;
-            }
-
+        @media (max-width: 768px) {
             nav.ai-categories h3 {
-                font-size: 3rem;
-                margin-bottom: 20px;
+                font-size: 4vw;
             }
 
             nav.ai-categories li {
-                font-size: 1.2em;
-                margin: 10px;
-                padding: 0.6rem 1rem;
+                font-size: 2vw;
             }
 
             img {
                 position: static;
-                width: 200px;
-                height: 200px;
-                margin: 20px auto;
+                width: 50vw;
+                height: 50vw;
+                margin: 5% auto;
                 display: block;
             }
         }
 
-        @media (max-width: 480px) { /* Phones */
+        @media (max-width: 480px) {
             nav.ai-categories h3 {
-                font-size: 2.5rem;
+                font-size: 5vw;
             }
 
             nav.ai-categories li {
-                font-size: 1em;
-                margin: 8px;
-                padding: 0.5rem 0.8rem;
+                font-size: 3vw;
             }
         }
     </style>
