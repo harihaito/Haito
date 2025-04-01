@@ -72,15 +72,16 @@
         }
 
         nav.ai-categories {
-            padding: 5%; /* Use percentage for padding */
+            padding: 5%;
             text-align: center;
             width: 90%;
-            max-width: 1000px; /* Increased max-width */
+            max-width: 1200px; /* Increased max-width for better desktop view */
             margin: 0 auto;
+            position: relative; /* Needed for absolute positioning of image */
         }
 
         nav.ai-categories h3 {
-            font-size: 3.5vw; /* Use viewport width for font size */
+            font-size: 3.5vw;
             margin-bottom: 3%;
             color: #2c3e50;
         }
@@ -95,8 +96,8 @@
         }
 
         nav.ai-categories li {
-            font-size: 1.5vw; /* Use viewport width for font size */
-            margin: 2%;
+            font-size: 1.5vw;
+            margin: 1%; /* Reduced margin for better spacing on smaller screens */
             border-radius: 0.5rem;
             color: white;
             padding: 1% 2%;
@@ -116,20 +117,21 @@
 
         img {
             position: absolute;
-            right: 5%; /* Use percentage for right position */
-            top: 40%; /* Use percentage for top position */
+            right: 5%;
+            top: 50%; /* Center the image vertically */
             transform: translateY(-50%);
             border-radius: 50%;
-            width: 25vw; /* Use viewport width for image size */
+            width: 25vw;
             height: 25vw;
             object-fit: cover;
-            display:flex;
+            max-width: 300px; /* Limit image size on larger screens */
+            max-height: 300px;
         }
 
         @media (max-width: 1024px) {
             img {
                 right: 2%;
-                top: 35%;
+                top: 50%;
                 width: 30vw;
                 height: 30vw;
             }
@@ -141,7 +143,8 @@
             }
 
             nav.ai-categories li {
-                font-size: 2vw;
+                font-size: 2.5vw; /* Slightly increased font size for better readability */
+                margin: 2%; /* Restore margin for better spacing on mobile */
             }
 
             img {
@@ -150,6 +153,8 @@
                 height: 50vw;
                 margin: 5% auto;
                 display: block;
+                max-width: none; /* Remove max-width on mobile */
+                max-height: none;
             }
         }
 
@@ -159,7 +164,7 @@
             }
 
             nav.ai-categories li {
-                font-size: 3vw;
+                font-size: 3.5vw; /* Further increased font size for smaller screens */
             }
         }
     </style>
